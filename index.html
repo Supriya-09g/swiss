@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swiss Beauty - Skincare</title>
+
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffb6d9, #ff94c6, #ff77b8);
+      color: #3d0036;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      opacity: 0.7;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .hero p {
+      margin: 20px auto;
+      max-width: 650px;
+      font-size: 20px;
+      color: #ffe5f2;
+    }
+
+    .btn {
+      background: #fff;
+      color: #ff4da6;
+      padding: 14px 40px;
+      border-radius: 40px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* ---------- FEATURES ---------- */
+    .features {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-6px);
+      background: rgba(255, 255, 255, 0.65);
+    }
+
+    .box h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #c70068;
+    }
+
+    /* ---------- RESULTS SECTION ---------- */
+    .results, .standards, .technology, .skin-types, .reviews {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .results ul, .standards ul, .skin-types ul {
+      list-style: none;
+      font-size: 18px;
+      line-height: 1.8;
+      padding: 0;
+    }
+
+    .results ul li::before {
+      content: "✔ ";
+      color: #c70068;
+      font-weight: 700;
+    }
+
+    /* ---------- REVIEW CARDS ---------- */
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .review-card {
+      background: rgba(255,255,255,0.55);
+      border-radius: 20px;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+      text-align: left;
+    }
+
+    .stars {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .review-name {
+      font-weight: 600;
+      margin: 8px 0;
+      color: #c70068;
+    }
+
+    /* ---------- FINAL CTA ---------- */
+    .final-cta {
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .final-cta h2 {
+      color: #fff;
+      font-size: 36px;
+    }
+
+    .final-cta p {
+      color: #ffe5f2;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Swiss Beauty</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Glow Naturally With Swiss Beauty Skincare</h1>
+    <p>Clean, gentle, dermatologist-approved formulas designed for healthy, radiant skin.</p>
+
+    <a href="#" class="btn">Shop Now</a>
+    <a href="#" class="btn">View Collections</a>
+  </section>
+
+  <!-- FEATURES -->
+  <h2>Why Your Skin Will Love Us</h2>
+  <div class="features">
+    <div class="box"><h3>Clean Ingredients</h3><p>No parabens, sulfates, or toxins.</p></div>
+    <div class="box"><h3>Plant-Based</h3><p>Powered by botanicals and antioxidants.</p></div>
+    <div class="box"><h3>Deep Hydration</h3><p>Micro-absorption molecules for long-lasting moisture.</p></div>
+    <div class="box"><h3>Dermatologist Approved</h3><p>Safe for all skin types.</p></div>
+  </div>
+
+  <!-- VISIBLE RESULTS -->
+  <section class="results">
+    <h2>Visible Results in 7–14 Days</h2>
+    <ul>
+      <li>Brighter, glowing skin in 7 days</li>
+      <li>Reduced acne marks in 14 days</li>
+      <li>Smoother, softer texture</li>
+      <li>Reduced dullness & pigmentation</li>
+    </ul>
+  </section>
+
+  <!-- STANDARDS -->
+  <section class="standards">
+    <h2>100% Clean, Safe & Ethical</h2>
+    <ul>
+      <li>🌱 Plant-based ingredients</li>
+      <li>🐰 Cruelty-free</li>
+      <li>🌿 Vegan friendly</li>
+      <li>✨ No parabens / sulphates</li>
+    </ul>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="technology">
+    <h2>Advanced Skin Technology</h2>
+    <p>Micro-Absorption Formula · HydraLock Molecules · Pro-Collagen Boosters · Cloud-Light Texture</p>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <h2>Loved By 20,000+ Customers</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-name">Aarohi S.</div>
+        <p>“My skin became visibly brighter within a week. Non-sticky and lightweight — love it!”</p>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-name">Riya Mehta</div>
+        <p>“Perfect for sensitive skin! No irritation, only glow and softness.”</p>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-name">Simran K.</div>
+        <p>“The hydration lasts all day. Smells amazing and feels luxurious.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <h2>Your Glow Starts Today</h2>
+    <p>Experience the perfect blend of science and nature.</p>
+    <a href="#" class="btn">Shop Bestsellers</a>
+    <a href="#" class="btn">Get My Glow Kit</a>
+  </section>
+
+</body>
+</html>
